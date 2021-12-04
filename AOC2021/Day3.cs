@@ -7,7 +7,7 @@ class Day3
     public static void RunPart1()
     {
         // Part 1
-        string[] input = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "../../../inputs/Day3.txt"));
+        string[] input = File.ReadAllLines(@"../../../inputs/Day3.txt");
         bool[] mostRepeated = GetMostRepeatedArray(input);
 
         string gammaRate = "";
@@ -34,7 +34,7 @@ class Day3
     public static void RunPart2()
     {
         // Part 2
-        string[] input = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "../../../inputs/Day3.txt"));
+        string[] input = File.ReadAllLines(@"../../../inputs/Day3.txt");
         string firstValue = CalculateFirstValueRecursively(input, 0)[0];
         string secondValue = CalculateSecondValueRecursively(input, 0)[0];
         int oxygen = Convert.ToInt32(firstValue.ToString(), 2);

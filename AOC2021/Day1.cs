@@ -6,7 +6,7 @@ class Day1
     public static void RunPart1()
     {
         // Part 1
-        string[] input = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "../../../inputs/Day1.txt"));
+        string[] input = File.ReadAllLines(@"../../../inputs/Day1.txt");
         int counter = 0;
         int previous = Int32.Parse(input[0]);
         foreach (string line in input)
@@ -21,7 +21,7 @@ class Day1
     public static void RunPart2()
     {
         // Part 2
-        string[] input = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "../../../inputs/Day1.txt"));
+        string[] input = File.ReadAllLines(@"../../../inputs/Day1.txt");
         int increasesCounter = 0;
 
         int firstGourpCounter = 0;

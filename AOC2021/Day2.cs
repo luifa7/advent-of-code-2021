@@ -6,7 +6,7 @@ class Day2
     public static void RunPart1()
     {
         // Part 1
-        string[] input = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "../../../inputs/Day2.txt"));
+        string[] input = File.ReadAllLines(@"../../../inputs/Day2.txt");
         int position = 0;
         int depth = 0;
         foreach (string line in input)
@@ -25,7 +25,7 @@ class Day2
     public static void RunPart2()
     {
         // Part 2
-        string[] input = File.ReadAllLines(Path.Combine(Environment.CurrentDirectory, "../../../inputs/Day2.txt"));
+        string[] input = File.ReadAllLines(@"../../../inputs/Day2.txt");
         int position = 0;
         int depth = 0;
         int aim = 0;
